@@ -5,17 +5,18 @@ export default function Clima() {
   return (
     <View style={styles.clima}>
       <Text style={[styles.texto, styles.acutal]}>
-        {/* TODO: tmp acutal */}
-        <Text style={styles.temperatura}> &#x2103; </Text>
+        {/* TODO: tmp acutal
+        <Text style={styles.temperatura}> &#x2103; </Text>*/}
         {/*<Image
           style={{width: 66, height: 58}}
           //source={{}}
         />*/}
       </Text>
+      
       <View style={styles.temperaturas}>
         <Text style={styles.texto}> 
-          Min {' '}
-          <Text style={styles.temperatura}> &#x2103; </Text>
+          Min {''}
+          <Text style={styles.temperatura}>&#x2103;</Text>
         </Text>
       </View>
     </View>

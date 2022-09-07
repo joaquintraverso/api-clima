@@ -14,16 +14,17 @@ export default function Formulario() {
 
         <View>
           <Picker>
-            <Picker.item label='seleccione una ciudad..' value=''/>
-            <Picker.item label='Concepcion del Uruguay' value=''/>
-            <Picker.item label='Villa Elisa' value=''/>
-            <Picker.item label='Cordoba' value=''/>
-            <Picker.item label='Bariloche' value=''/>
+            <Picker.Item label='seleccione una ciudad..' value=''/>
+            <Picker.Item label='Concepcion del Uruguay' value=''/>
+            <Picker.Item label='Villa Elisa' value=''/>
+            <Picker.Item label='Cordoba' value=''/>
+            <Picker.Item label='Bariloche' value=''/>
           </Picker>
         </View>
+        
         <TouchableWithoutFeedback>
-          <Animated.View>
-            <Text style={styles.btnBuscar}>Buscar Clima</Text>
+          <Animated.View style={styles.btnBuscar}>
+            <Text style={styles.txtBuscar}>Buscar Clima</Text>
           </Animated.View>
         </TouchableWithoutFeedback>
       </View>
@@ -43,13 +44,15 @@ const styles = StyleSheet.create({
     marginTop: 50,
     backgroundColor: '#000',
     padding: 10,
-    justifyContent: 'center'
+    justifyContent: 'center',
+    alignItems: 'center',
+    fontSize: 18,
   },
-  input: {
+  txtBuscar: {
     color: '#FFF',
     fontWeight: 'bold',
     textTransform: 'uppercase',
-    textAlign: 'center',
+    textAling: 'center',
     fontSize: 18,
   },
   formulario: {
